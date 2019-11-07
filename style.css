@@ -1,54 +1,220 @@
-body {
-	background: #fff;
-	font: 15px Arial, Helvetica, sans-serif;
-	line-height: 1.4;
-	margin: 50px 0;
-	margin-bottom: 100px;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-em {
-	color: #999;
-}
-p {
-	line-height: 1.4;
-}
-ul {
-	margin-bottom: 0;
-}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
 section {
-	margin-bottom: 2em;
+  display: block;
 }
-blockquote {
-	margin: 0;
-	margin-bottom: 1em;
+body {
+  line-height: 1.5;
 }
-.item {
-	margin-bottom: 1em;
+ol,
+ul {
+  list-style: none;
 }
-#resume {
-	margin: 0 auto;
-	max-width: 480px;
-	padding: 0 20px;
+blockquote,
+q {
+  quotes: none;
 }
-#basics {
-	margin-bottom: -10px;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
-#basics h3 {
-	margin-top: 1.5em;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-#basics .contact strong,
-#location strong {
-	clear: both;
-	float: left;
-	line-height: 1.3;
-	width: 120px;
-}
-#profiles,
-#skills {
-	overflow: hidden;
-}
-#profiles .item,
-#skills .item {
-	float: left;
-	width: 50%;
+html,
+button,
+input,
+textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell,
+    Roboto, Helvetica, Arial, Noto Sans, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+body {
+  margin: 0 auto;
+  padding: 4rem 2rem 8rem 2rem;
+  max-width: 600px;
+  color: #333333;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 4rem;
+  font-size: 12px;
+  font-weight: 600;
+  color: #c9cccf;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+p {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  transition: box-shadow 160ms ease 0s;
+  box-shadow: rgb(238, 251, 255) 0px -9px 0px inset;
+  border-bottom: 2px solid rgb(207, 243, 255);
+  text-decoration: none;
+  color: #323336;
+}
+
+a:hover {
+  box-shadow: rgb(207, 243, 255) 0px -1.2em 0px inset;
+}
+
+section ul {
+  margin-top: 0.5rem;
+  margin-left: 2.5rem;
+  list-style: disc;
+}
+
+section li {
+  margin-bottom: 0.5rem;
+}
+
+.grey {
+  color: #96999b;
+}
+
+.contact {
+  padding-top: 2rem;
+}
+
+.contact span {
+  width: 100px;
+  display: inline-block;
+}
+
+.headline {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.skills li {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  padding: 0.25rem 1rem;
+  background-color: #f1f5f7;
+  white-space: nowrap;
+}
