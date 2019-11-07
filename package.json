@@ -1,8 +1,12 @@
 {
-  "name": "jsonresume-theme-boilerplate",
-  "version": "0.1.2",
+  "name": "jsonresume-theme-standard-resume",
+  "version": "0.0.1",
   "description": "Boilerplate theme for JSON Resume",
-  "author": "Mattias Erming",
+  "author": "Ema Suriano",
+  "scripts": {
+    "html": "node dev/html",
+    "pdf": "node dev/pdf"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/erming/jsonresume-theme-boilerplate"
@@ -10,5 +14,9 @@
   "license": "MIT",
   "dependencies": {
     "handlebars": "^2.0.0-alpha.4"
+  },
+  "devDependencies": {
+    "btoa": "^1.2.1",
+    "puppeteer": "^2.0.0"
   }
 }
