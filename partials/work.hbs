@@ -15,10 +15,12 @@
 			{{position}} |
 			{{/if}}
 			{{#if startDate}}
-			{{startDate}}
+			{{date startDate "MMM, YYYY"}}
+
+
 			{{/if}}
 			{{#if endDate}}
-			- {{endDate}}
+			- {{date endDate "MMM, YYYY"}}
 			{{else}}
 			- Current
 			{{/if}}

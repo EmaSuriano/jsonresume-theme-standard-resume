@@ -2,15 +2,12 @@ var fs = require('fs');
 var path = require('path');
 var Handlebars = require('handlebars');
 
-// require('handlebars-helpers')({
-//   handlebars: Handlebars,
-// });
-
 function render(resume) {
   var css = fs.readFileSync(__dirname + '/style.css', 'utf-8');
   var tpl = fs.readFileSync(__dirname + '/resume.hbs', 'utf-8');
   var partialsDir = path.join(__dirname, 'partials');
   var filenames = fs.readdirSync(partialsDir);
+  Handlebars.registerHelper('date', require('helper-date'));
 
   filenames.forEach(function(filename) {
     var matches = /^([^.]+).hbs$/.exec(filename);
