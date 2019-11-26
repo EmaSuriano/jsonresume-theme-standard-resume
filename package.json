@@ -1,7 +1,7 @@
 {
   "name": "jsonresume-theme-standard-resume",
   "version": "1.0.2",
-  "description": "Boilerplate theme for JSON Resume",
+  "description": "JSON Resume Theme based on Standard Resume",
   "author": "Ema Suriano",
   "scripts": {
     "html": "node dev/html",
