@@ -133,11 +133,18 @@ textarea {
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+:root {
+  --text: #333333;
+  --headline: #c9cccf;
+  --sub-headline: #96999b;
+  --accent: rgb(207, 243, 255);
+}
+
 body {
   margin: 0 auto;
   padding: 4rem 0rem;
   max-width: 600px;
-  color: #333333;
+  color: var(--text);
 }
 
 @media print {
@@ -157,7 +164,7 @@ h2 {
   margin-top: 2.5rem;
   font-size: 12px;
   font-weight: 600;
-  color: #c9cccf;
+  color: var(--headline);
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
@@ -173,7 +180,7 @@ h3 {
 
 h4 {
   font-size: 14px;
-  color: #96999b;
+  color: var(--sub-headline);
   padding-top: 0.5rem;
   padding-bottom: 0.25rem;
 }
@@ -230,5 +237,22 @@ section ul {
 }
 
 .grey {
-  color: #96999b;
+  color: var(--sub-headline);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pdf {
+  color: var(--headline);
+  transition: color ease 160ms;
+  border: none;
+  box-shadow: none;
+}
+
+.pdf:hover {
+  box-shadow: none;
+  color: var(--sub-headline);
 }
