@@ -147,12 +147,6 @@ body {
   color: var(--text);
 }
 
-@media print {
-  body {
-    padding: 1rem;
-  }
-}
-
 h1 {
   font-size: 26px;
   font-weight: 600;
@@ -255,4 +249,14 @@ section ul {
 .pdf:hover {
   box-shadow: none;
   color: var(--sub-headline);
+}
+
+@media print {
+  body {
+    padding: 1rem;
+  }
+
+  .pdf {
+    display: none;
+  }
 }
