@@ -3,18 +3,18 @@
 		<h2>Projects</h2>
 		{{#each resume.publications}}
 			
-			<span class="headline">
+			<h3>
 				{{#if website}}
 					<a target="_blank" rel="noopener" href="{{website}}">{{name}}</a>
 				{{else}}
 					{{name}}
 				{{/if}}
-			</span>
+			</h3>
 
 			{{#if releaseDate}}
-				<p class="sub-headline">
+				<h4>
 					{{ date releaseDate "MMM, YYYY"}}
-				</p>
+				</h4>
 			{{/if}}
 
 			{{#if summary}}

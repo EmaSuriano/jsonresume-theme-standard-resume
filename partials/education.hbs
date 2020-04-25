@@ -2,8 +2,8 @@
 <section>
 	<h2>Education</h2>
 	{{#each resume.education}}
-		<span class="headline">{{institution}}</span>
-		<p class="sub-headline">
+		<h3>{{institution}}</h3>
+		<h4>
 			{{#if studyType }}
 				{{studyType}}
 			{{/if}}
@@ -16,7 +16,7 @@
 			{{/if}}
 			
 			{{> date-range}}
-		</p>
+		</h4>
 	{{/each}}
 </section>
 {{/if}}

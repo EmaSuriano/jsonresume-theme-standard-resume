@@ -2,14 +2,14 @@
 <section>
 	<h2>Work Experience</h2>
 	{{#each resume.work}}
-		<div>
-			<span class="headline">
+		<div class="position">
+			<h3>
 				{{#if website}}
 					<a target="_blank" rel="noopener" href="{{website}}">{{company}}</a>
 				{{else}}
 					{{company}}
 				{{/if}}
-			</span>
+			</h3>
 
 			{{#if positions}}
 				{{#each positions}}

@@ -135,7 +135,7 @@ textarea {
 
 body {
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 4rem 0rem;
   max-width: 600px;
   color: #333333;
 }
@@ -147,14 +147,14 @@ body {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
 h2 {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   font-size: 12px;
   font-weight: 600;
   color: #c9cccf;
@@ -162,8 +162,26 @@ h2 {
   letter-spacing: 1.2px;
 }
 
-p {
+h3 {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  margin-top: 0.5rem;
+}
+
+h4 {
+  font-size: 14px;
+  color: #96999b;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+p,
+li {
   margin-bottom: 0.25rem;
+  font-size: 14px;
 }
 
 a {
@@ -184,15 +202,6 @@ section ul {
   list-style: disc;
 }
 
-section li {
-  margin-bottom: 0.5rem;
-}
-
-.sub-headline {
-  color: #96999b;
-  padding-top: 0.5rem;
-}
-
 .contact {
   padding-top: 2rem;
 }
@@ -200,15 +209,6 @@ section li {
 .contact span {
   width: 100px;
   display: inline-block;
-}
-
-.headline {
-  display: block;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 1.2px;
-  padding-top: 2rem;
 }
 
 .skills ul {
@@ -223,4 +223,12 @@ section li {
   padding: 0.25rem 1rem;
   background-color: #f1f5f7;
   white-space: nowrap;
+}
+
+.position {
+  margin-bottom: 1rem;
+}
+
+.grey {
+  color: #96999b;
 }
