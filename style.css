@@ -135,9 +135,15 @@ textarea {
 
 body {
   margin: 0 auto;
-  padding: 4rem 2rem 8rem 2rem;
+  padding: 4rem 2rem;
   max-width: 600px;
   color: #333333;
+}
+
+@media print {
+  body {
+    padding: 1rem;
+  }
 }
 
 h1 {
@@ -148,7 +154,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 4rem;
+  margin-top: 3rem;
   font-size: 12px;
   font-weight: 600;
   color: #c9cccf;
@@ -182,8 +188,9 @@ section li {
   margin-bottom: 0.5rem;
 }
 
-.grey {
+.sub-headline {
   color: #96999b;
+  padding-top: 0.5rem;
 }
 
 .contact {
@@ -202,7 +209,6 @@ section li {
   font-size: 18px;
   letter-spacing: 1.2px;
   padding-top: 2rem;
-  padding-bottom: 0.5rem;
 }
 
 .skills ul {

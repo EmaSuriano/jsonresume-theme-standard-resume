@@ -9,7 +9,7 @@ function render(resume) {
   var filenames = fs.readdirSync(partialsDir);
   Handlebars.registerHelper('date', require('helper-date'));
 
-  filenames.forEach(function(filename) {
+  filenames.forEach(function (filename) {
     var matches = /^([^.]+).hbs$/.exec(filename);
     if (!matches) {
       return;
@@ -28,4 +28,11 @@ function render(resume) {
 
 module.exports = {
   render: render,
+  pdfRenderOptions: {
+    margin: {
+      top: '1cm',
+      bottom: '1cm',
+    },
+    mediaType: 'print',
+  },
 };

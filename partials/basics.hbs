@@ -1,15 +1,13 @@
 {{#resume.basics}}
-<h1>{{name}}</h1>
-<p>{{label}}</p>
+  <h1>{{name}}</h1>
+  <p>{{label}}</p>
 
-{{#if location}}
-{{#location}}
-<p class="grey">{{city}}, {{countryCode}}</p>
-{{/location}}
-{{/if}}
+  {{#if location}}
+    <p class="sub-headline">{{location.city}}, {{location.countryCode}}</p>
+  {{/if}}
 
-{{#if summary}}
-<p class="grey">{{summary}}</p>
-{{/if}}
+  {{#if summary}}
+    <p class="sub-headline">{{summary}}</p>
+  {{/if}}
 
 {{/resume.basics}}

@@ -5,7 +5,7 @@ const resumeJson = require('./resume.json');
 
 const themePkg = require('..');
 
-const createPdf = callback => {
+const createPdf = (callback) => {
   (async () => {
     const html = themePkg.render(resumeJson);
     const puppeteerLaunchArgs = [];

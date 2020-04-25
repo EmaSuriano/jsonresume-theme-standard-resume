@@ -2,42 +2,23 @@
 <section>
 	<h2>Work Experience</h2>
 	{{#each resume.work}}
-	<div>
-		<span class="headline">
-			{{#if website}}
-			<a target="_blank" rel="noopener" href="{{website}}">{{company}}</a>
-			{{else}}
-			{{company}}
-			{{/if}}
-		</span>
-		<p class="grey">
-			{{#if position}}
-			{{position}} |
-			{{/if}}
-			{{#if startDate}}
-			{{date startDate "MMM, YYYY"}}
+		<div>
+			<span class="headline">
+				{{#if website}}
+					<a target="_blank" rel="noopener" href="{{website}}">{{company}}</a>
+				{{else}}
+					{{company}}
+				{{/if}}
+			</span>
 
-
-			{{/if}}
-			{{#if endDate}}
-			- {{date endDate "MMM, YYYY"}}
+			{{#if positions}}
+				{{#each positions}}
+					{{> position}}
+				{{/each}}
 			{{else}}
-			- Current
+				{{> position}}
 			{{/if}}
-		</p>
-		{{#if summary}}
-		<div class="summary">
-			<p>{{summary}}</p>
 		</div>
-		{{/if}}
-		{{#if highlights.length}}
-		<ul class="highlights">
-			{{#each highlights}}
-			<li>{{.}}</li>
-			{{/each}}
-		</ul>
-		{{/if}}
-	</div>
 	{{/each}}
 </section>
 {{/if}}

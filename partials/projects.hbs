@@ -1,22 +1,26 @@
 {{#if resume.publications.length}}
-<section>
-	<h2>Projects</h2>
-	{{#each resume.publications}}
-	<span class="headline">
-		{{#if website}}
-		<a target="_blank" rel="noopener" href="{{website}}">{{name}}</a>
-		{{else}}
-		{{name}}
-		{{/if}}
-	</span>
-	{{#if releaseDate}}
-	<p class="grey">
-		{{ date releaseDate "MMM, YYYY"}}
-	</p>
-	{{/if}}
-	{{#if summary}}
-	<p>{{summary}}</p>
-	{{/if}}
-	{{/each}}
-</section>
+	<section>
+		<h2>Projects</h2>
+		{{#each resume.publications}}
+			
+			<span class="headline">
+				{{#if website}}
+					<a target="_blank" rel="noopener" href="{{website}}">{{name}}</a>
+				{{else}}
+					{{name}}
+				{{/if}}
+			</span>
+
+			{{#if releaseDate}}
+				<p class="sub-headline">
+					{{ date releaseDate "MMM, YYYY"}}
+				</p>
+			{{/if}}
+
+			{{#if summary}}
+				<p>{{summary}}</p>
+			{{/if}}
+
+		{{/each}}
+	</section>
 {{/if}}

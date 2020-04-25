@@ -2,28 +2,21 @@
 <section>
 	<h2>Education</h2>
 	{{#each resume.education}}
-	<span class="headline">{{institution}}</span>
-	<p class="grey">
-		{{#if studyType }}
-		{{#if area }}
-		{{studyType}} - {{area}}
-		{{else}}
-		{{studyType}}
-		{{/if}}
-		{{else}}
-		{{#if area }}
-		{{area}}
-		{{/if}}
-		{{/if}}
-		{{#if startDate}}
-		| {{date startDate "YYYY"}}
-		{{#if endDate}}
-		- {{date endDate "YYYY"}}
-		{{else}}
-		- Current
-		{{/if}}
-		{{/if}}
-	</p>
+		<span class="headline">{{institution}}</span>
+		<p class="sub-headline">
+			{{#if studyType }}
+				{{studyType}}
+			{{/if}}
+
+			{{#if area }}
+				{{#if studyType }}
+					-
+				{{/if}}
+				{{area}}
+			{{/if}}
+			
+			{{> date-range}}
+		</p>
 	{{/each}}
 </section>
 {{/if}}
