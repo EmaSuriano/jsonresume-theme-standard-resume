@@ -253,7 +253,7 @@ section ul {
 
 @media print {
   body {
-    padding: 1rem;
+    padding: 0rem;
   }
 
   .pdf {
