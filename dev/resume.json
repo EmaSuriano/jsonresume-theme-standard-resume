@@ -97,6 +97,13 @@
   ],
   "publications": [
     {
+      "name": "Another project",
+      "publisher": "Occaecat qui Lorem adipisicing ut sunt aute.",
+      "releaseDate": "2014-10-01",
+      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+      "summary": "Nisi sit consectetur consectetur nulla. Nulla nostrud aliqua duis aliquip sunt. Cupidatat commodo cillum dolore nulla veniam enim in enim sint velit proident. Cupidatat laboris exercitation aliquip dolore eu elit. In mollit veniam eiusmod irure anim sit aute eu magna cillum. Sint aute irure laboris aute officia in velit in irure deserunt. Incididunt mollit mollit pariatur laborum laboris mollit ad enim ipsum deserunt. Ad tempor nulla occaecat consequat dolor nulla"
+    },
+    {
       "name": "Video compression for 3d media",
       "publisher": "Hooli",
       "releaseDate": "2014-10-01",

@@ -137,7 +137,7 @@ textarea {
   --text: #333333;
   --headline: #c9cccf;
   --sub-headline: #96999b;
-  --accent: rgb(207, 243, 255);
+  --accent: rgb(207, 214, 255);
 }
 
 body {
@@ -187,14 +187,14 @@ li {
 
 a {
   transition: box-shadow 160ms ease 0s;
-  box-shadow: rgb(238, 251, 255) 0px -9px 0px inset;
-  border-bottom: 2px solid rgb(207, 243, 255);
+  box-shadow: rgb(238, 245, 255) 0px -9px 0px inset;
+  border-bottom: 2px solid var(--accent);
   text-decoration: none;
   color: #323336;
 }
 
 a:hover {
-  box-shadow: rgb(207, 243, 255) 0px -1.2em 0px inset;
+  box-shadow: var(--accent) 0px -1.2em 0px inset;
 }
 
 section ul {
@@ -227,7 +227,7 @@ section ul {
 }
 
 .position {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .grey {

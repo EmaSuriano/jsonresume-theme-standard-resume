@@ -2,25 +2,25 @@
 	<section>
 		<h2>Projects</h2>
 		{{#each resume.publications}}
-			
-			<h3>
-				{{#if website}}
-					<a target="_blank" rel="noopener" href="{{website}}">{{name}}</a>
-				{{else}}
-					{{name}}
+			<div class="position">
+				<h3>
+					{{#if website}}
+						<a target="_blank" rel="noopener" href="{{website}}">{{name}}</a>
+					{{else}}
+						{{name}}
+					{{/if}}
+				</h3>
+
+				{{#if releaseDate}}
+					<h4>
+						{{ date releaseDate "MMM, YYYY"}}
+					</h4>
 				{{/if}}
-			</h3>
 
-			{{#if releaseDate}}
-				<h4>
-					{{ date releaseDate "MMM, YYYY"}}
-				</h4>
-			{{/if}}
-
-			{{#if summary}}
-				<p>{{summary}}</p>
-			{{/if}}
-
+				{{#if summary}}
+					<p>{{summary}}</p>
+				{{/if}}
+			</div>
 		{{/each}}
 	</section>
 {{/if}}
