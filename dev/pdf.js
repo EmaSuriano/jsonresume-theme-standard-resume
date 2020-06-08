@@ -35,11 +35,10 @@ const createPdf = (callback) => {
     });
 
     await browser.close();
-  })()
-    .then(callback)
-    .catch(callback);
+  })().then(callback);
 };
 
 createPdf(() => {
   fs.renameSync('resume.pdf', 'dev/resume.pdf');
+  console.log('Done Pdf');
 });

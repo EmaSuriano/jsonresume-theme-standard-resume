@@ -4,6 +4,7 @@
   "description": "JSON Resume Theme based on Standard Resume",
   "author": "Ema Suriano",
   "scripts": {
+    "start": "nodemon dev",
     "html": "node dev/html",
     "pdf": "node dev/pdf"
   },
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "btoa": "^1.2.1",
+    "nodemon": "^2.0.4",
     "puppeteer": "^2.0.0"
   }
 }

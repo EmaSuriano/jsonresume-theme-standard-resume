@@ -137,12 +137,13 @@ textarea {
   --text: #333333;
   --headline: #c9cccf;
   --sub-headline: #96999b;
-  --accent: rgb(207, 214, 255);
+  --primary: rgb(207, 214, 255);
+  --secondary: rgb(238, 245, 255);
 }
 
 body {
   margin: 0 auto;
-  padding: 4rem 0rem;
+  padding: 4rem 2rem;
   max-width: 600px;
   color: var(--text);
 }
@@ -187,14 +188,14 @@ li {
 
 a {
   transition: box-shadow 160ms ease 0s;
-  box-shadow: rgb(238, 245, 255) 0px -9px 0px inset;
-  border-bottom: 2px solid var(--accent);
+  box-shadow: var(--secondary) 0px -9px 0px inset;
+  border-bottom: 2px solid var(--primary);
   text-decoration: none;
-  color: #323336;
+  color: var(--text);
 }
 
 a:hover {
-  box-shadow: var(--accent) 0px -1.2em 0px inset;
+  box-shadow: var(--primary) 0px -1.2em 0px inset;
 }
 
 section ul {
@@ -222,7 +223,7 @@ section ul {
   margin-bottom: 1rem;
   margin-right: 0.5rem;
   padding: 0.25rem 1rem;
-  background-color: #f1f5f7;
+  background-color: var(--secondary);
   white-space: nowrap;
 }
 
@@ -254,6 +255,11 @@ section ul {
 @media print {
   body {
     padding: 0rem;
+  }
+
+  section,
+  div {
+    page-break-inside: avoid;
   }
 
   .pdf {

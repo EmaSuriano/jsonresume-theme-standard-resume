@@ -1,46 +1,35 @@
 # JSON Resume Theme Standard Resume
 
-> JSON Resume theme imitating the amazing style from [Standard Resume](https://standardresume.co/r/jeffleu)
+> JSON Resume theme based on [Standard Resume](https://standardresume.co/r/jeffleu) style.
 
-![Web Screenshot](./docs/web-capture.png)
+## Design
 
-### Install the command line
+| Web                                       | Pdf                                       |
+| ----------------------------------------- | ----------------------------------------- |
+| ![Web Screenshot](./docs/web-capture.png) | ![Pdf Screenshot](./docs/pdf-capture.png) |
+
+## How to use
 
 We're going to use the official [resume-cli](https://github.com/jsonresume/resume-cli) to run our development server.
 
-Go ahead and install it:
-
 ```bash
-npm install -g resume-cli
-```
+# Download official resume CLI
+> npm install -g resume-cli
 
-### Download theme
+# Download Theme
+> npm install -g jsonresume-theme-standard-resume
 
-```bash
-npm install -g jsonresume-theme-standard-resume
-```
-
-### Serve theme
-
-While inside the theme folder, simply run:
-
-```
-resume serve -t standard-resume
-```
-
-You should now see this message:
-
-```
+# Display your resume with the theme
+> resume serve -t standard-resume
 Preview: http://localhost:4000
 Press ctrl-c to stop
 ```
-
-Congratulations, you've made it!
 
 ## Development
 
 I provided two scripts inside the `package.json`:
 
+- `yarn start`: Generate `html` and `pdf` and host file on [http://localhost:3000/](http://localhost:3000/).
 - `yarn html`: Generate `html` file and store it inside `/dev`.
 - `yarn pdf`: Generate `pdf` file and store it inside `/dev`.
 

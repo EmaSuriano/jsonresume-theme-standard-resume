@@ -8,12 +8,12 @@ function createHtml(callback) {
   var html = themePkg.render(resumeJson);
   var stream = fs.createWriteStream(path.resolve(__dirname, 'resume.html'));
 
-  stream.write(html, function(error) {
+  stream.write(html, function (error) {
     if (error) {
-      return callback(error);
+      throw Error(error);
     }
     stream.close(callback);
   });
 }
 
-createHtml(console.log);
+createHtml(() => console.log('Done HTML'));
