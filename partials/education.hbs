@@ -1,8 +1,9 @@
 {{#if resume.education.length}}
-<section>
-	<h2>Education</h2>
 	{{#each resume.education}}
-		<div class="position">
+		<section class="position">
+			{{#if @first}}
+				<h2>Education</h2>
+			{{/if}}
 			<h3>{{institution}}</h3>
 			<h4>
 				{{#if studyType }}
@@ -18,7 +19,6 @@
 				
 				{{> date-range}}
 			</h4>
-		</div>
+		</section>
 	{{/each}}
-</section>
 {{/if}}
