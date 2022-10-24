@@ -2,11 +2,7 @@
 
 > JSON Resume theme based on [Standard Resume](https://standardresume.co/r/jeffleu) style.
 
-## Design
-
-| Web                                       | Pdf                                       |
-| ----------------------------------------- | ----------------------------------------- |
-| ![Web Screenshot](./docs/web-capture.png) | ![Pdf Screenshot](./docs/pdf-capture.png) |
+## Demo
 
 ## How to use
 
