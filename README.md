@@ -25,7 +25,7 @@ Preview: http://localhost:4000
 
 ## Development
 
-I provided two scripts inside the `package.json`:
+I provided three scripts inside the `package.json`:
 
 - `yarn start`: Start server on [http://localhost:3000/](http://localhost:3000/), and generate `html` and `pdf` on demand.
 - `yarn build`: Generate `html` and `pdf` file and store it inside `/public`.
