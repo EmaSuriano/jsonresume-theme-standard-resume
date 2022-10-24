@@ -1,11 +1,13 @@
 {
   "name": "jsonresume-theme-standard-resume",
+  "version": "0.0.0",
   "description": "JSON Resume Theme based on Standard Resume",
   "author": "Ema Suriano",
   "scripts": {
     "start": "ts-node scripts/dev",
     "build": "ts-node scripts/build",
-    "preview": "http-server public"
+    "preview": "http-server public",
+    "release": "npx semantic-release"
   },
   "repository": {
     "type": "git",
