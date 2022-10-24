@@ -1,0 +1,418 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Richard Hendriks</title>
+
+	<style>
+	html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+html,
+button,
+input,
+textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --text: #333333;
+  --headline: #c9cccf;
+  --sub-headline: #96999b;
+  --primary: rgb(207, 214, 255);
+  --secondary: rgb(238, 245, 255);
+}
+
+body {
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  max-width: 600px;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--headline);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+h3 {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  margin-top: 0.5rem;
+}
+
+h4 {
+  font-size: 14px;
+  color: var(--sub-headline);
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+p,
+li {
+  margin-bottom: 0.25rem;
+  font-size: 14px;
+}
+
+a {
+  transition: box-shadow 160ms ease 0s;
+  box-shadow: var(--secondary) 0px -9px 0px inset;
+  border-bottom: 2px solid var(--primary);
+  text-decoration: none;
+  color: var(--text);
+}
+
+a:hover {
+  box-shadow: var(--primary) 0px -1.2em 0px inset;
+}
+
+section ul {
+  margin-top: 0.5rem;
+  margin-left: 2.5rem;
+  list-style: disc;
+}
+
+.contact {
+  padding-top: 2rem;
+}
+
+.contact span {
+  width: 100px;
+  display: inline-block;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.skills li {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  padding: 0.25rem 1rem;
+  background-color: var(--secondary);
+  white-space: nowrap;
+}
+
+.position {
+  margin-bottom: 1.5rem;
+}
+
+.grey {
+  color: var(--sub-headline);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pdf {
+  color: var(--headline);
+  transition: color ease 160ms;
+  border: none;
+  box-shadow: none;
+}
+
+.pdf:hover {
+  box-shadow: none;
+  color: var(--sub-headline);
+}
+
+@media print {
+  body {
+    padding: 0rem;
+  }
+
+  section,
+  div {
+    page-break-inside: avoid;
+  }
+
+  .pdf {
+    display: none;
+  }
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<div id="resume">
+		  <div class="header">
+		    <h1>Richard Hendriks</h1>
+		      <a class="pdf" title="Download PDF" href=/index.pdf>
+		        <svg
+		          width='26px'
+		          height='26px'
+		          fill='none'
+		          stroke='currentColor'
+		          viewBox='0 0 24 24'
+		          xmlns='http://www.w3.org/2000/svg'
+		        ><path
+		            stroke-linecap='round'
+		            stroke-linejoin='round'
+		            stroke-width='2'
+		            d='M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4'
+		          ></path></svg>      </a>
+		  </div>
+		  
+		  <p>Programmer</p>
+		
+		    <p class="grey">San Francisco, USA</p>
+		
+		    <p class="grey">Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p>
+		
+				<section class="position">
+						<h2>Work Experience</h2>
+					<h3>
+							<a target="_blank" rel="noopener" href="http://google.com/">Google</a>
+					</h3>
+		
+							<h4>
+							    Senior Software Engineer
+							
+							      | Oct, 2022
+							  
+							      - Current
+							</h4>
+							
+							  <div class="summary">
+							    <p>Elit mollit ipsum fugiat enim labore et non. Amet nulla cupidatat esse est qui magna culpa velit magna excepteur proident Lorem aliquip ullamco. Anim culpa sit cillum enim consectetur aliqua id Lorem aute id id laborum. Sit nostrud ea anim et deserunt cillum sint culpa laboris. Nisi magna amet minim esse dolore. Do officia ipsum duis exercitation incididunt irure pariatur.</p>
+							  </div>
+							
+							<h4>
+							    Software Engineer
+							
+							      | Aug, 2018
+							  
+							    - Oct, 2022
+							</h4>
+							
+							  <div class="summary">
+							    <p>Elit mollit ipsum fugiat enim labore et non. Amet nulla cupidatat esse est qui magna culpa velit magna excepteur proident Lorem aliquip ullamco. Anim culpa sit cillum enim consectetur aliqua id Lorem aute id id laborum. Sit nostrud ea anim et deserunt cillum sint culpa laboris. Nisi magna amet minim esse dolore. Do officia ipsum duis exercitation incididunt irure pariatur.</p>
+							  </div>
+							
+				</section>
+				<section class="position">
+					<h3>
+							<a target="_blank" rel="noopener" href="http://piedpiper.com">Pied Piper</a>
+					</h3>
+		
+						<h4>
+						    CEO/President
+						
+						      | Dec, 2013
+						  
+						    - Dec, 2014
+						</h4>
+						
+						  <div class="summary">
+						    <p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
+						  </div>
+						
+						  <ul class="highlights">
+						      <li>Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
+						      <li>Successfully won Techcrunch Disrupt</li>
+						      <li>Optimized an algorithm that holds the current world record for Weisman Scores</li>
+						  </ul>
+				</section>
+				<section class="position">
+						<h2>Education</h2>
+					<h3>University of Oklahoma</h3>
+					<h4>
+							Bachelor
+		
+								-
+							Information Technology
+						
+						    | Jun, 2011
+						
+						  - Jan, 2014
+					</h4>
+				</section>
+				<section class="position">
+						<h2>Projects</h2>
+					<h3>
+							<a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)">Another project</a>
+					</h3>
+		
+						<h4>
+							Oct, 2014
+						</h4>
+		
+						<p>Nisi sit consectetur consectetur nulla. Nulla nostrud aliqua duis aliquip sunt. Cupidatat commodo cillum dolore nulla veniam enim in enim sint velit proident. Cupidatat laboris exercitation aliquip dolore eu elit. In mollit veniam eiusmod irure anim sit aute eu magna cillum. Sint aute irure laboris aute officia in velit in irure deserunt. Incididunt mollit mollit pariatur laborum laboris mollit ad enim ipsum deserunt. Ad tempor nulla occaecat consequat dolor nulla</p>
+				</section>
+				<section class="position">
+					<h3>
+							<a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)">Video compression for 3d media</a>
+					</h3>
+		
+						<h4>
+							Oct, 2014
+						</h4>
+		
+						<p>Innovative middle-out compression algorithm that changes the way we store data.</p>
+				</section>
+			<h2>Contact Information</h2>
+			<section class="contact">
+				<p>
+					<span>Website:</span>
+					<a href="http://richardhendricks.com" target="_blank" rel="noopener">http://richardhendricks.com</a>
+				</p>
+		
+					<p>
+						<span>Email:</span>
+						<a href="mailto:richard.hendriks@gmail.com" target="_blank" rel="noopener noreferrer">richard.hendriks@gmail.com</a>
+					</p>
+		
+					<p>
+						<span>Phone:</span> (912) 555-4321
+					</p>
+		
+			</section>
+	</body>
+</html>
