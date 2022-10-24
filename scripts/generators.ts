@@ -1,9 +1,7 @@
 import fs from 'fs';
 import puppeteer, { MediaType } from 'puppeteer';
 import resumeJson from '../resume.json';
-import theme from '..';
-
-const { render, pdfRenderOptions } = theme;
+import { render, pdfRenderOptions } from '..';
 
 const asyncStreamWrite = (path: string, content: string) => {
   const stream = fs.createWriteStream(path);
@@ -19,14 +17,14 @@ const asyncStreamWrite = (path: string, content: string) => {
 };
 
 export const generateHtml = async (path: string) => {
-  const html = theme.render(resumeJson);
+  const html = render(resumeJson);
   await asyncStreamWrite(path, html);
 
   return html;
 };
 
 export const generatePdf = async (path: string) => {
-  const html = theme.render(resumeJson);
+  const html = render(resumeJson);
 
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
