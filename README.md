@@ -18,16 +18,15 @@ We're going to use the official [resume-cli](https://github.com/jsonresume/resum
 # Display your resume with the theme
 > resume serve -t standard-resume
 Preview: http://localhost:4000
-Press ctrl-c to stop
 ```
 
 ## Development
 
 I provided two scripts inside the `package.json`:
 
-- `yarn start`: Generate `html` and `pdf` and host file on [http://localhost:3000/](http://localhost:3000/).
-- `yarn html`: Generate `html` file and store it inside `/dev`.
-- `yarn pdf`: Generate `pdf` file and store it inside `/dev`.
+- `yarn start`: Start server on [http://localhost:3000/](http://localhost:3000/), and generate `html` and `pdf` on demand.
+- `yarn build`: Generate `html` and `pdf` file and store it inside `/dist`.
+- `yarn preview`: Start static server on `/dist`.
 
 ## License
 
