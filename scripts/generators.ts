@@ -1,7 +1,9 @@
 import fs from 'fs';
-import puppeteer from 'puppeteer';
+import puppeteer, { MediaType } from 'puppeteer';
 import resumeJson from '../resume.json';
 import theme from '..';
+
+const { render, pdfRenderOptions } = theme;
 
 const asyncStreamWrite = (path: string, content: string) => {
   const stream = fs.createWriteStream(path);
@@ -30,7 +32,13 @@ export const generatePdf = async (path: string) => {
   const page = await browser.newPage();
 
   await page.setContent(html, { waitUntil: 'networkidle0' });
-  const pdf = await page.pdf({ path, format: 'Letter', printBackground: true });
+  await page.emulateMediaType(pdfRenderOptions.mediaType as MediaType);
+  const pdf = await page.pdf({
+    path,
+    format: 'Letter',
+    printBackground: true,
+    margin: pdfRenderOptions.margin,
+  });
   await browser.close();
 
   return pdf;

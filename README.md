@@ -1,8 +1,11 @@
 # JSON Resume Theme Standard Resume
 
+[![Master](https://github.com/EmaSuriano/jsonresume-theme-standard-resume/actions/workflows/master.yml/badge.svg)](https://github.com/EmaSuriano/jsonresume-theme-standard-resume/actions/workflows/master.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2b52e998-4c7c-4878-a797-c9f65a57414e/deploy-status)](https://app.netlify.com/sites/jsonresume-theme-standard-resume/deploys)
+
 > JSON Resume theme based on [Standard Resume](https://standardresume.co/r/jeffleu) style.
 
-## Demo
+## [Demo](https://jsonresume-theme-standard-resume.netlify.app/)
 
 ## How to use
 
