@@ -7,6 +7,6 @@ tsconfig.json
 .DS_Store
 dev/
 docs/
-dist/
+public/
 scripts/
 .github/

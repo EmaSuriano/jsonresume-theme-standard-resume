@@ -5,7 +5,7 @@
   "scripts": {
     "start": "ts-node scripts/dev",
     "build": "ts-node scripts/build",
-    "preview": "http-server dist"
+    "preview": "http-server public"
   },
   "repository": {
     "type": "git",
