@@ -33,4 +33,4 @@ I provided two scripts inside the `package.json`:
 
 ## License
 
-Available under [the MIT license](http://mths.be/mit).
+MIT.
