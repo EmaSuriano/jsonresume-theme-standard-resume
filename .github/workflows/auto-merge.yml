@@ -1,13 +1,18 @@
 name: auto-merge
 
-on: [push]
+on: [pull_request, pull_request_target]
 
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
       - uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
           target: minor
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.MYTOKEN }}
