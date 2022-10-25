@@ -4,7 +4,7 @@
 	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
+	{{#if resume.blockIndex}} <meta name="robots" content="noindex"> {{/if}}
 	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
 
 	<style>
@@ -17,8 +17,8 @@
 	<div id="resume">
 		{{> basics }}
 		{{> work }}
-		{{> education }}
 		{{> projects }}
-		{{> contact }}
+		{{> languages }}
+		{{> education }}
 	</body>
 </html>

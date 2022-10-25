@@ -3,20 +3,17 @@ import path from 'path';
 import { generateHtml, generatePdf } from './generators';
 
 const PORT = 3000;
+const PUBLIC_FOLDER = path.join(__dirname, '..', 'public');
 
 const server = http.createServer(async (req, response) => {
-  switch (req.url) {
-    case '/index.pdf':
-      const pdf = await generatePdf(path.join(__dirname, '/index.pdf'));
-      response.writeHead(200, { 'Content-Type': 'application/pdf' });
-      response.write(pdf);
-      break;
-
-    default:
-      const html = await generateHtml(path.join(__dirname, '/index.html'));
-      response.writeHead(200, { 'Content-Type': 'text/html' });
-      response.write(html);
-      break;
+  if (req.url?.endsWith('.pdf')) {
+    const pdf = await generatePdf(path.join(PUBLIC_FOLDER, '/index.pdf'));
+    response.writeHead(200, { 'Content-Type': 'application/pdf' });
+    response.write(pdf);
+  } else {
+    const html = await generateHtml(path.join(PUBLIC_FOLDER, '/index.html'));
+    response.writeHead(200, { 'Content-Type': 'text/html' });
+    response.write(html);
   }
 
   response.end();

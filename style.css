@@ -190,7 +190,7 @@ a {
   box-shadow: var(--secondary) 0px -9px 0px inset;
   border-bottom: 2px solid var(--primary);
   text-decoration: none;
-  color: var(--text);
+  color: inherit;
 }
 
 a:hover {
@@ -228,6 +228,12 @@ section ul {
 
 .position {
   margin-bottom: 1.5rem;
+}
+
+.languages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .grey {

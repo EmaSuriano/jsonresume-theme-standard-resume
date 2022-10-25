@@ -6,17 +6,7 @@
 			{{/if}}
 			<h3>{{institution}}</h3>
 			<h4>
-				{{#if studyType }}
-					{{studyType}}
-				{{/if}}
-
-				{{#if area }}
-					{{#if studyType }}
-						-
-					{{/if}}
-					{{area}}
-				{{/if}}
-				
+				{{studyType}}{{#if area }}, {{area}}{{/if}}
 				{{> date-range}}
 			</h4>
 		</section>

@@ -4,8 +4,8 @@
   "description": "JSON Resume Theme based on Standard Resume",
   "author": "Ema Suriano",
   "scripts": {
-    "start": "ts-node scripts/dev",
-    "build": "ts-node scripts/build",
+    "start": "nodemon scripts/dev.ts",
+    "build": "nodemon scripts/build.ts",
     "preview": "http-server public",
     "release": "npx semantic-release"
   },
@@ -20,8 +20,10 @@
   },
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^18.11.5",
     "@types/puppeteer": "^5.4.7",
     "http-server": "^14.1.1",
+    "nodemon": "^2.0.20",
     "puppeteer": "^2.0.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"

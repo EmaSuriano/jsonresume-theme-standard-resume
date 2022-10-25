@@ -11,7 +11,17 @@
   <p>{{label}}</p>
 
   {{#if location}}
-    <p class="grey">{{location.city}}, {{location.countryCode}}</p>
+    <p class="grey">
+      {{location.city}}, {{location.countryCode}}
+
+      {{#if email }}
+        | {{ email }}
+      {{/if}}
+
+      {{#if website }}
+        | <a href='{{website}}' target='_blank' rel='noopener'>{{website}}</a>
+      {{/if}}
+    </p>
   {{/if}}
 
   {{#if summary}}
