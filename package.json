@@ -5,7 +5,7 @@
   "author": "Ema Suriano",
   "scripts": {
     "start": "nodemon scripts/dev.ts",
-    "build": "nodemon scripts/build.ts",
+    "build": "ts-node scripts/build.ts",
     "preview": "http-server public",
     "release": "npx semantic-release"
   },

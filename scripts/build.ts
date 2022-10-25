@@ -5,7 +5,10 @@ import path from 'path';
 const PUBLIC_FOLDER = path.join(__dirname, '..', 'public');
 
 const main = async () => {
-  fs.mkdirSync(PUBLIC_FOLDER);
+  if (!fs.existsSync(PUBLIC_FOLDER)) {
+    fs.mkdirSync(PUBLIC_FOLDER);
+  }
+
   await generateHtml(path.join(PUBLIC_FOLDER, 'index.html'));
   await generatePdf(path.join(PUBLIC_FOLDER, 'index.pdf'));
 };
