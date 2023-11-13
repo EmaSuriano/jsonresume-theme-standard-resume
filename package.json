@@ -19,7 +19,7 @@
     "helper-date": "^1.0.1"
   },
   "devDependencies": {
-    "@tsconfig/node16": "^1.0.3",
+    "@tsconfig/node16": "^16.1.1",
     "@types/node": "^18.11.5",
     "@types/puppeteer": "^5.4.7",
     "http-server": "^14.1.1",
