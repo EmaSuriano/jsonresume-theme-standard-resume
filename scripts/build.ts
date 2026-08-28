@@ -10,7 +10,11 @@ const main = async () => {
   }
 
   await generateHtml(path.join(PUBLIC_FOLDER, 'index.html'));
-  await generatePdf(path.join(PUBLIC_FOLDER, 'index.pdf'));
+  if (process.env.CI) {
+    console.log('Skipping PDF generation in CI');
+  } else {
+    await generatePdf(path.join(PUBLIC_FOLDER, 'index.pdf'));
+  }
 };
 
 main();
