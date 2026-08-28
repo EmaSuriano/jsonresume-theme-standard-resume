@@ -9,3 +9,6 @@ updates:
       - EmaSuriano
     commit-message:
       prefix: 'fix'
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
